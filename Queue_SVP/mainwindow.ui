@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>411</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow
+{
+border: 1px;
+background: rgb(240, 254, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="4">
+     <widget class="QPushButton" name="addButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 2px solid rgb(120, 200, 255);
+    border-radius: 10px;
+    padding: 0 8px;
+    background-color:  rgb(200, 255, 255);
+    min-width: 20ex;
+    min-height: 8ex;
+	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)
+}
+
+QPushButton:pressed {
+    border: 2px solid rgb(20, 200, 255);
+    background-color: rgb(50, 200, 255);
+}
+
+QPushButton:hover {
+    border: 2px solid rgb(20, 150, 255);
+    color:rgb(0, 50, 150);
+    background-color: rgb(150, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid rgb(120, 200, 255);
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: rgb(200, 255, 255);
+	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0" colspan="6">
+     <widget class="QListWidget" name="QueueWidget">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid rgb(120, 200, 255);
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: rgb(200, 255, 255);
+	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)</string>
+      </property>
+      <property name="text">
+       <string>СНИЛС пациента</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4" colspan="2">
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="2" colspan="2">
+     <widget class="QPushButton" name="receptionButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 2px solid rgb(120, 200, 255);
+    border-radius: 10px;
+    padding: 0 8px;
+    background-color:  rgb(200, 255, 255);
+    min-width: 20ex;
+    min-height: 8ex;
+	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)
+}
+
+QPushButton:pressed {
+    border: 2px solid rgb(20, 200, 255);
+    background-color: rgb(50, 200, 255);
+}
+
+QPushButton:hover {
+    border: 2px solid rgb(20, 150, 255);
+    color:rgb(0, 50, 150);
+    background-color: rgb(150, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Приём</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>411</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+    border: 2px solid rgb(120, 200, 255);
+    border-radius: 10px;
+    padding: 0 8px;
+    background-color:  rgb(200, 255, 255);
+    min-width: 20ex;
+    min-height: 8ex;
+	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)
+}
+
+QMenuBar:pressed {
+    border: 2px solid rgb(20, 200, 255);
+    background-color: rgb(50, 200, 255);
+}
+
+QMenuBar:hover {
+    border: 2px solid rgb(20, 150, 255);
+    color:rgb(0, 50, 150);
+    background-color: rgb(150, 255, 255);
+}</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="styleSheet">
+     <string notr="true">Qmenu {
+    border: 2px solid rgb(120, 200, 255);
+    border-radius: 10px;
+    padding: 0 8px;
+    background-color:  rgb(200, 255, 255);
+    min-width: 20ex;
+    min-height: 8ex;
+	font: 700 9pt &quot;Segoe UI&quot;;
+    color:rgb(0, 100, 255)
+}
+
+Qmenu:pressed {
+    border: 2px solid rgb(20, 200, 255);
+    background-color: rgb(50, 200, 255);
+}
+
+Qmenu:hover {
+    border: 2px solid rgb(20, 150, 255);
+    color:rgb(0, 50, 150);
+    background-color: rgb(150, 255, 255);
+}</string>
+    </property>
+    <property name="title">
+     <string>О приложении</string>
+    </property>
+    <addaction name="info"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="add"/>
+    <addaction name="reseption"/>
+    <addaction name="exit"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="add">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/add.png</normaloff>:/rec/img/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить</string>
+   </property>
+  </action>
+  <action name="reseption">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/reseption.png</normaloff>:/rec/img/reseption.png</iconset>
+   </property>
+   <property name="text">
+    <string>Приём</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/exit.png</normaloff>:/rec/img/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Завершить программу</string>
+   </property>
+  </action>
+  <action name="info">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/info.png</normaloff>:/rec/img/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
